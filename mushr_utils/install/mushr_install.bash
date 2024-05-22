@@ -102,6 +102,7 @@ cd $MUSHR_WS_PATH/catkin_ws/src/ && vcs import < mushr/base-repos.yaml && vcs im
 
 # Make custom mushr_noetic script
 cat <<- EOF > ${MUSHR_INSTALL_PATH}/mushr_noetic
+export DOCKER_DEFAULT_PLATFORM=linux/arm64
 export MUSHR_INSTALL_PATH=${MUSHR_INSTALL_PATH}
 export MUSHR_REAL_ROBOT=${MUSHR_REAL_ROBOT}
 export MUSHR_WS_PATH=${MUSHR_WS_PATH}

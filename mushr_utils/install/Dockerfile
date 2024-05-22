@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM arm64v8/ubuntu:focal
 
 LABEL maintainer="Matt Schmittle <schmttle@cs.washington.edu>"
 ARG DEBIAN_FRONTEND=noninteractive
